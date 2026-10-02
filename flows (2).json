@@ -1,0 +1,163 @@
+[
+    {
+        "id": "a1b2c3d4e5f60001",
+        "type": "ui-table",
+        "z": "65142b5d53b00538",
+        "group": "3a15d20cf22bb4a1",
+        "name": "Stats BPM",
+        "label": "Statistiques BPM par utilisateur",
+        "order": 4,
+        "width": 6,
+        "height": 0,
+        "maxrows": 0,
+        "passthru": false,
+        "autocols": false,
+        "showSearch": false,
+        "deselect": true,
+        "selectionType": "none",
+        "columns": [
+            {
+                "title": "Utilisateur",
+                "key": "utilisateur",
+                "keyType": "key",
+                "width": "0"
+            },
+            {
+                "title": "Mesures",
+                "key": "mesures",
+                "keyType": "key",
+                "width": "0"
+            },
+            {
+                "title": "Moyenne",
+                "key": "moyenne",
+                "keyType": "key",
+                "width": "0"
+            },
+            {
+                "title": "Min",
+                "key": "min",
+                "keyType": "key",
+                "width": "0"
+            },
+            {
+                "title": "Max",
+                "key": "max",
+                "keyType": "key",
+                "width": "0"
+            },
+            {
+                "title": "Dernière",
+                "key": "derniere",
+                "keyType": "key",
+                "width": "0"
+            }
+        ],
+        "mobileBreakpoint": "sm",
+        "mobileBreakpointType": "defaults",
+        "action": "replace",
+        "className": "",
+        "x": 990,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a15d20cf22bb4a1",
+        "type": "ui-group",
+        "name": "Group 1",
+        "page": "b70e502cbb56a2ea",
+        "width": 12,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "b70e502cbb56a2ea",
+        "type": "ui-page",
+        "name": "Monitor Cardiaque",
+        "ui": "eb6ad105adc879c8",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "4e6359da84a61f0d",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "eb6ad105adc879c8",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "4e6359da84a61f0d",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#fcfcfd",
+            "primary": "#0d2dce",
+            "bgPage": "#f9f9fb",
+            "groupBg": "#ffffff",
+            "groupOutline": "#d9d9e0"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "68c038839a3a2b9d",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.32.0"
+        }
+    }
+]
